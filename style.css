@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+canvas {
+    display: block;
+    background: #000;
+}
+#gameOverScreen {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #eb4343;
+    font-family: Arial, sans-serif;
+}
+#gameOverScreen h1 {
+    font-size: 48px;
+    margin: 0;
+}
+#gameOverScreen p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+#restartButton {
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    background: #adebad;
+    color: #000;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#restartButton:hover {
+    background: #03f103;
+    color: #ce7133;
+}
