@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Snake Game</h1>
-    <canvas id="gameCanvas"></canvas>
-
-    <div id="gameOverScreen">
-        <h1>Game Over!</h1>
-        <p id="scoreDisplay">Score: 0</p>
-        <button id="restartButton">Restart</button>
+    <h1>🐍 Snake Game by V.s</h1>
+  <div class="score" id="score">Score: 0</div>
+  <div id="gameBox">
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div id="gameOver" class="gameOverScreen" style="display:none">
+      Game Over!
+      <div class="restartHint">Press <b>Space</b> to Restart</div>
     </div>
-
+  </div>
+  <div style="color:#aeaeae;font-size:1rem;">Arrow Keys: Move | Eat food, don’t crash!</div>
+ 
 </body>
 <script src="scrypt.js"></script>
 </html>
